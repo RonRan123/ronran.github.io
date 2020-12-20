@@ -3,44 +3,89 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Ronith's work and blog">
   <meta name="keywords" content="Web design, projects, bio, resume, experience, poetry, blog, reflections">
   <meta name="author" content="Ronith Ranjan">
   <link rel="icon" type=image/png href="RR.png" />
   <title>Ronith Ranjan</title>
-  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
   <header>
+    <div class="logo">
+      <img src="RR.png" alt="RR" width="300" height="300">
+    </div>
     <div class="container">
-      <h1>Ronith Ranjan</h1>
       <nav class="navbar">
         <ul>
-          <li><a href="index.html"></a>Home</li>
-          <li><a href="#bio"></a>Bio</li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact"></a>Contact Me</li>
-          <li><a href="#blog"></a>Blog</li>
+          <li><a href="#contact">Contact Me</a></li>
+          <li><a href="#blog">Blog</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <img src="RR.png" alt="RR" width="300" height="300">
-  <section id="bio">
 
+  <!-- Introduction -->
+  <section class="intro" id="home">
+    <h1 class="section-title section-title-intro">Hi! I am <strong>Ronith Ranjan</strong></h1>
+    <h2 class="section-subtitle section-subtitle-intro">Welcome to my personal website!</h2>
+    <img src="img/ronith.png" alt="pic of Ronith" class="intro-img">
   </section>
+
+  <!-- About Me -->
+  <section class="about-me" id="about">
+    <h2 class="section-title section-title-about">More about me...</h2>
+    <p class="section-subtitle section-subtitle-about">So I'm kinda cool</p>
+    <div class="section-body">
+      <p></p>
+      <p></p>
+    </div>
+  </section>
+
+
+  <!-- Project Carousel -->
   <section id="projects">
+    <h2 class="section-title section-title-projects">What I've Done...</h2>
+
+    <div class="learned-learning">
+      <div class="learned-learning">
+        <h3>Languages</h3>
+        <h3>Libraries</h3>
+      </div>
+      <div class="learned-learning">
+
+      </div>
+    </div>
 
   </section>
+
+
+
   <section id="contact">
-
+    <h2 class="section-title section-title-contact">How to reach me...</h2>
+        <p> Email me at
+          <a href="mailto:ronith.ranjan123@gmail.com" class="contact-link">ronith.ranjan123@gmail.com</a>
+        </p>
   </section>
 
+  <!-- Footer -->
+  <footer>
+    <a href="mailto:ronith.ranjan123@gmail.com" class="contact-link">ronith.ranjan123@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list-item"><a class="social-list-link" href="https://github.com/RonRan123" target="_blank">GitHub</a></li>
+      <li class="social-list-item"><a class="social-list-link" href="https://www.linkedin.com/in/ronith-ranjan-16a349157/" target="_blank">LinkedIn</a></li>
+      <li class="social-list-item"><a class="social-list-link" href="#" target="_blank">Twitter</a></li>
+    </ul>
+    <p>Ronith Ranjan, Copyright &copy; 2020</p>
+  </footer>
 </body>
-<footer>
-  <p>Ronith Ranjan, Copyright &copy; 2020</p>
-</footer>
+
 
 </html>
