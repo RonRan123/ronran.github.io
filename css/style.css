@@ -20,6 +20,8 @@
   --fs-h2: 2rem;
   --fs-h3: 1rem;
   --fs-body: 0.75rem;
+  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+        0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
 @media (min-width: 800px) {
@@ -94,6 +96,7 @@ h3 {
 .section-subtitle-intro,
 .section-subtitle-about {
   background: var(--color-accent);
+  padding: .25em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
 }
@@ -106,6 +109,12 @@ nav {
 /* Intro */
 .intro {
   position: relative;
+}
+
+.intro-img {
+}
+.section-subtitle-intro{
+  display: inline-block;
 }
 
 @media (min-width: 600px) {
@@ -123,6 +132,8 @@ nav {
   .intro-img {
     grid-area: img;
     min-width: 500px;
+    position: relative;
+    z-index: 2;
   }
 
   .section-subtitle-intro {
@@ -133,5 +144,45 @@ nav {
     position: relative;
     left: -1.5em;
     width: calc(100% + 1.5em);
+  }
+}
+
+.projects {
+    background-color: var(--color-dark);
+    background-image: url(../img/computer.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: var(--color-light);
+    text-align: center;
+}
+
+.section-title-projects{
+  color: var(--color-accent);
+  position: relative;
+}
+
+.section-title-projects::after{
+  content: '';
+  display: block;
+  width: 2em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: var(--color-light);
+  opacity: 0.25;
+}
+
+.skill{
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  .skills{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .skill +.skill{
+    margin-left: 2em;
   }
 }
