@@ -113,6 +113,7 @@ header{
   margin: 0;
   padding: 0;
   display: flex;
+  float: right;
 }
 
 .navbar {
@@ -144,9 +145,26 @@ header{
   max-width: 300px;
 }
 
+.navbar-toggle{
+  display: none;
+}
+
 @media (max-width:500px){
   .navbar-links {
     flex-direction: column;
+  }
+  .navbar-toggle{
+    display: block;
+    padding: 2vw;
+    font-size: var(--ff-nav);
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    align-self: flex-start;
+  }
+  .navbar li{
+    display: none;
   }
 }
 
