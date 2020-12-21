@@ -19,6 +19,7 @@
   --fs-h1: 2.5rem;
   --fs-h2: 2rem;
   --fs-h3: 1rem;
+  --fs-nav: 1.75vh;
   --fs-body: 0.75rem;
   --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
         0.125em 0.125em 0.25em rgba(0,0,0,.15);
@@ -107,13 +108,48 @@ header{
   justify-content: space-between;
 }
 
+/* Navigation */
+.navbar-links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar {
+  width: 100vw;
+  background: var(--color-accent);
+}
+
+.navbar li{
+  list-style-type: none;
+  margin: 0 1.8vw;
+  font-size: var(--fs-nav);
+}
+
+.navbar a{
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.navbar a:hover{
+  background-color: var(--color-light);
+}
+
+.navbar-links li::before {
+}
+
 
 .logo{
   max-width: 300px;
 }
-.navbar{
-  display: none;
+
+@media (max-width:500px){
+  .navbar-links {
+    flex-direction: column;
+  }
 }
+
 
 /* Intro */
 .intro {
@@ -152,7 +188,7 @@ header{
     grid-row: 3;
     text-align: left;
     position: relative;
-    width: calc(100% + 3em);
+    /* width: calc(100% + 3em); */
   }
   .section-title-intro{
     grid-area: title;
