@@ -1,14 +1,13 @@
-$(document).ready(function(){
-  $(".navbar-toggle").click(function(){
+const navToggle = document.querySelector('.navbar-toggle');
+const navLinks = document.querySelectorAll('.navbar-link')
 
-      /* this if else to change the text in the button */
-      if($(".navbar-toggle").text() == "☰"){
-       $(".navbar-toggle").text("X");
-      }else{
-        $(".navbar-toggle").text("☰");
-      }
 
-    /* this function toggle the visibility of our "li" elements */
-    $("li").toggle("slow");
-  });
+navToggle.addEventListener('click', ()=> {
+  document.body.classList.toggle('navbar-open');
 });
+
+navLinks.forEach(link => { 
+  link.addEventListener('click', () => {
+    document.body.classList.remove('navbar-open')
+  })
+})
