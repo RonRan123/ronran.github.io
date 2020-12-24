@@ -7,39 +7,48 @@
   <meta name="description" content="Ronith's work and blog">
   <meta name="keywords" content="Web design, projects, bio, resume, experience, poetry, blog, reflections">
   <meta name="author" content="Ronith Ranjan">
-  <link rel="icon" type=image/png href="RR.png"/>
+  <meta httt-equiv="X-UA-Compatible" content="ie+edge">
+  <link rel="icon" type=image/png href="RR.png" />
   <title>Ronith Ranjan</title>
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
   <link rel="stylesheet" href="./css/style.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="js/index.js"></script>
 </head>
 
 <body>
   <!-- Header -->
   <header>
-      <nav class="navbar">
-        <!-- <div class="logo">
-          <img src="RR.png" alt="RR" width="300" height="300">
-        </div> -->
-        <ul class="navbar-links">
-          <button class="navbar-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact Me</a></li>
-          <li><a href="#blog">Blog</a></li>
-        </ul>
-      </nav>
+    <div class="logo">
+        <img src="RR.svg" alt="RR" width="150" height="150">
+      </div>
+    <button class="navbar-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li class="navbar-item"><a class="navbar-link" href="#home">Home</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#about">About Me</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#projects">Projects</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#contact">Contact Me</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#blog">Blog</a></li>
+      </ul>
+    </nav>
   </header>
 
   <!-- Introduction -->
   <section class="intro" id="home">
-    <h1 class="section-title section-title-intro">Hi! I am <strong>Ronith Ranjan</strong></h1>
-    <p class="section-subtitle section-subtitle-intro">Welcome to my personal website!</p>
+    <h1 class="section-title section-title-intro">Hi! I am Ronith Ranjan</h1>
+    <div class="bio">
+      <ul class="bio-list">
+        <li class="bio-fact"><mark>studying</mark> at UVA as a first-year</li>
+        <li class="bio-fact"><mark>majoring</mark> in Computer Science and Political & Social Thought</li>
+        <li class="bio-fact"><mark>interested</mark> in public service and social impact</li>
+        <li class="bio-fact"><mark>curious</mark> about tech, government, and culture</li>
+
+      </ul>
+    </div>
+    <!-- <p class="section-subtitle section-subtitle-intro">Welcome to my personal website!</p> -->
     <img src="img/ronith.png" alt="pic of Ronith" class="intro-img">
   </section>
 
@@ -102,7 +111,7 @@
     <p>Ronith Ranjan, Copyright &copy; 2020</p>
   </footer>
 
-
+<script src="js/index.js"></script>
 </body>
 
 
