@@ -49,6 +49,7 @@ body {
 
 section {
   padding: 5em 2em;
+  min-height: 100vh;
 }
 
 img {
@@ -313,6 +314,25 @@ header{
   .section-title-intro{
     grid-area: title;
   }
+}
+/* About Me */
+.div-resume{
+  text-align: center;
+}
+
+#resume{
+  text-decoration: none;
+  padding:0.35em 1.2em;
+  color:var(--color-accent);
+  display: inline-block;
+  text-align: center;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-nav);
+  width: auto;
+  border: 0.1em solid var(--color-dark)
+}
+#resume:hover{
+  background: var(--color-dark);
 }
 
 .projects {
