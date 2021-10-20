@@ -264,7 +264,7 @@ header{
 }
 
 .intro-img {
-  max-width: 50%;
+  max-width: 25%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -286,14 +286,15 @@ header{
     grid-gap: 2 vw;
     /* grid-column-gap: 1em; */
     grid-template-areas:
-      "title img"
+      "title title"
+      "summary img"
       "summary img";
     grid-template-columns: 2fr 1fr ;
   }
 
   .intro-img {
     grid-area: img;
-    min-width: 500px;
+    min-width: 400px;
     position: relative;
     z-index: 2;
   }
