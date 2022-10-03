@@ -25,6 +25,25 @@ strong {
   color: #333;
 }
 
+h1{
+  font-weight: 600;
+  font-size: 400%;
+}
+
 a {
   color: #1c74e8;
+}
+
+hr {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#prof-pic {
+  border-radius: 50%;
+  width: 350px;
+  float: right;
+  margin: -30px 0 20px 40px;
 }
