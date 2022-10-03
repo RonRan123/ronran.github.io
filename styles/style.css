@@ -1,0 +1,30 @@
+:root {
+  --color-blue: #0083ff;
+  --color-pink: #ff5470;
+  --color-slate: #415869;
+  --color-offwhite: #fbfbfc;
+  --color-ghpurple: #6f42c1;
+  --color-lightgray: #ededed;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 50em;
+  background-color: var(--color-offwhite);
+  font-family: "Helvetica", "Arial", sans-serif;
+
+  line-height: 1.5;
+  padding: 4em 1em;
+
+  color: #566b78;
+}
+
+h1,
+h2,
+strong {
+  color: #333;
+}
+
+a {
+  color: #1c74e8;
+}
