@@ -19,6 +19,8 @@ body {
   color: #566b78;
 }
 
+
+
 h1,
 h2,
 strong {
@@ -38,6 +40,16 @@ hr {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 10vh;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
 }
 
 
